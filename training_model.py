@@ -55,5 +55,6 @@ randomforest = RandomForestClassifier()
 randomforest.fit(x_train, y_train)
 y_pred = randomforest.predict(x_val)
 
-filename = 'titanic_model.sav'
+# filename = 'titanic_model.sav'
+filename = 'titanic_model.pkl'
 pickle.dump(randomforest, open(filename, 'wb'))
